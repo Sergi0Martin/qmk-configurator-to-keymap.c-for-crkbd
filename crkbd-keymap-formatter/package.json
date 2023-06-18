@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build-github-pages": "ng build --output-path docs --base-href /crkbd-keymap-formatter/",
+    "build-github-pages": "ng build --output-path ../docs --base-href /crkbd-keymap-formatter/",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
