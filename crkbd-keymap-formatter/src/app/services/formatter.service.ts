@@ -15,7 +15,6 @@ interface Keymap {
   providedIn: 'root'
 })
 export class FormatterService {
-
   constructor() { }
 
   public outputFileName = 'converted_keymap.c';
@@ -23,7 +22,6 @@ export class FormatterService {
   public rows = 3;
   public columnsBySide = this.columns / 2;
   public additionalRowColumns = 6;
-
 
   public format(data: string): File {
     const keymap: Keymap = JSON.parse(data);

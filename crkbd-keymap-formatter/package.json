@@ -2,7 +2,6 @@
   "name": "crkbd-keymap-formatter",
   "version": "0.0.1",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build-github-pages": "ng build --output-path ../docs --base-href /qmk-configurator-to-keymap.c-for-crkbd/",
     "watch": "ng build --watch --configuration development"
