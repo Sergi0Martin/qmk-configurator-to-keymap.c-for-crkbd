@@ -7,7 +7,6 @@ Tool to format the json created by *QMK Configurator* to **c** file in a readabl
 ## Credits
 Thanks to this projects:
 
-Foostan, the designer of Corne Keyboard ([crkbd](https://github.com/foostan/crkbd/tree/main))
+[Foostan](https://github.com/foostan), the designer of Corne Keyboard ([crkbd](https://github.com/foostan/crkbd))
 
 All contributors of best keyboard firmware ([QMK project](https://github.com/qmk))
- 
