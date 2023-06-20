@@ -1,19 +1,33 @@
+<h1>1. Download your keymap.json from
+  <a href="https://config.qmk.fm/#/crkbd/rev1/LAYOUT_split_3x6_3" title="QMK Configurator" target="_blank"
+    rel="noopener noreferrer"> QMK Configurator </a>
+</h1>
+
+<div>
+  <h1>2. Upload that json file here:</h1>
+  <mat-form-field>
+    <mat-label>Choose a layout</mat-label>
+    <mat-select [(ngModel)]="selectedLayout">
+      <mat-option *ngFor="let layout of layoutTypes" [value]="layout">{{ layout }}</mat-option>
+    </mat-select>
+  </mat-form-field>
   <input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
-  
+
   <div class="file-upload">
-    
+
     {{fileName || "No file uploaded yet."}}
-    
+
     <button mat-mini-fab color="primary" class="upload-btn" (click)="fileUpload.click()">
       <mat-icon>attach_file</mat-icon>
     </button>
   </div>
-  
-  <pre *ngIf="formattedText">
+</div>
+
+<pre *ngIf="formattedText">
     <code>{{ formattedText }}</code>
   </pre>
-  
-  <a href="https://github.com/Sergi0Martin/qmk-configurator-to-keymap.c-for-crkbd" class="github_link" title="GitHub"
+
+<a href="https://github.com/Sergi0Martin/qmk-configurator-to-keymap.c-for-crkbd" class="github_link" title="GitHub"
   target="_blank" rel="noopener noreferrer">
   <img class="github_link" src="assets/img/github_Link.png">
 </a>
